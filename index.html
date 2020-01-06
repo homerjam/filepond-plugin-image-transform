@@ -35,37 +35,37 @@
         // Create the FilePond instance
         const pond = FilePond.create(inputElement, {
             imageTransformOutputStripImageHead: false,
-            imageCropAspectRatio: '1:1',
-            imageResizeTargetWidth: 384,
+//             imageCropAspectRatio: '1:1',
+            imageResizeTargetWidth: 2000,
             imageTransformOutputMimeType: 'image/jpeg',
-            imageTransformOutputQuality: 90,
+            imageTransformOutputQuality: 100,
             imageTransformOutputStripImageHead: false,
             onpreparefile: (file, output) => {
                 document.querySelector('img.output').src = URL.createObjectURL(output);
             },
-            fileMetadataObject: {
-                'markup': [
-                    [
-                        'rect', {
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            height: '60px',
-                            backgroundColor: 'rgba(0,0,0,.5)'
-                        },
-                    ],
-                    [
-                        'image', {
-                            right: '10px',
-                            bottom: '10px',
-                            width: '128px',
-                            height: '34px',
-                            src: './filepond-logo.svg',
-                            fit: 'contain'
-                        }
-                    ]
-                ]
-            },
+//             fileMetadataObject: {
+//                 'markup': [
+//                     [
+//                         'rect', {
+//                             left: 0,
+//                             right: 0,
+//                             bottom: 0,
+//                             height: '60px',
+//                             backgroundColor: 'rgba(0,0,0,.5)'
+//                         },
+//                     ],
+//                     [
+//                         'image', {
+//                             right: '10px',
+//                             bottom: '10px',
+//                             width: '128px',
+//                             height: '34px',
+//                             src: './filepond-logo.svg',
+//                             fit: 'contain'
+//                         }
+//                     ]
+//                 ]
+//             },
         });
     </script>
 
